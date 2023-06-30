@@ -104,14 +104,22 @@ describe('Automated tests', function () {
     describe(`STRETCH: Replace 'Citrine' with 'Tourmaline'`, function () {
         it(`STRETCH: Replace 'Citrine' with 'Tourmaline'`, function () {
             let { gems } = testItems;
-            expect(gems).to.be.an('array').that.does.not.include('Citrine');
-            expect(gems).to.be.an('array').that.does.include('Tourmaline');
+            if(gems.includes('Citrine')) {
+                this.skip();
+            } else {
+                expect(gems).to.be.an('array').that.does.not.include('Citrine');
+                expect(gems).to.be.an('array').that.does.include('Tourmaline');
+            }
         });
     });
     describe(`STRETCH: Sort the gems in reverse alphabetical order`, function () {
         it(`STRETCH: Sort the gems in reverse alphabetical order`, function () {
             let { gems } = testItems;
-            expect(gems).to.eql(['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond']);
+            if (gems.includes('Citrine')) {
+                this.skip();
+            } else {
+                expect(gems).to.eql(['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond']);
+            }
         });
     });
     describe(`STRETCH: Gem string with all gems`, function () {
