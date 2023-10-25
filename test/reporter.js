@@ -33,7 +33,7 @@ class MyReporter {
             .once(EVENT_RUN_BEGIN, () => {
                 console.log('');
                 console.log(`---
-| Part 1 - Function Practice | Complete? |
+| Functional Requirements | Complete? |
 | --- | :---: |`);
                 console.log(
                     `\x1b[32m`,
