@@ -15,7 +15,7 @@ console.log('Animals are: ', animalArray);
 //    a message, similar to the example above.
 
 
-let favoriteFoods = ['baklava' 'spanakopita', 'triopita', 'lamb']
+let favoriteFoods = ['baklava', 'spanakopita', 'triopita', 'lamb']
 console.log('Favorite foods are: ', favoriteFoods)
 
 
@@ -69,9 +69,16 @@ console.groupCollapsed('Second animal is', secondAnimal);  //unsure if we're sup
 //      you have proof that it works!)
 
 
-let lastAnimal = animalArray[3];
+
+
+let lastAnimal = animalArray[array.length - 1]; 
 console.log('Last animal is', lastAnimal);
 console.log('Animals are: ', animalArray);
+
+animalArray.push('horse');
+
+
+
 
 
 // 3.c. (STRETCH) TODO: Refactor 3.b to use the `animalArray` variable's .length
