@@ -106,6 +106,8 @@ console.log('Added an animal to end,', animalArray);
 
 
 let dessert = 'pie';
+favoriteFoods.push(dessert);
+console.log(favoriteFoods);
 
 
 // Example: Add to the beginning of an array using the Array.unshift method.
@@ -142,6 +144,8 @@ let colors = ['orange', 'yellow', 'green', 'teal'];
 //      array only contains three items now, AND to verify that `lastColor`
 //      contains the value "teal".)
 
+let lastColor = colors.pop();
+console.log(colors);
 
 
 
@@ -156,6 +160,10 @@ console.log('The animals are now', animalArray);
 //      To verify that your code worked, console.log `firstColor`! 
 
 
+
+let firstColor = colors.shift();
+
+console.log (firstColor);
 
 
 
