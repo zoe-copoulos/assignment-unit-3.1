@@ -37,8 +37,8 @@ console.log('Number of animals:', numberOfAnimals);
 //    Don't forget to console.log `numberOfFoods` to make sure your code worked!
 
 
-let numberOfFoods = favoriteFoods.length
-console.log('Number of favorite foods: ', numberOfFoods)
+let numberOfFoods = favoriteFoods.length;
+console.log('Number of favorite foods: ', numberOfFoods);
 
 
 // Accessing array items
@@ -57,7 +57,7 @@ console.log('First animal is', firstAnimal);
 
 
 let secondAnimal = animalArray[1];
-console.groupCollapsed('Second animal is', secondAnimal);  //unsure if we're supposed to be doing the foods instead of animals, but I guess that doesn't matter for the purpose
+console.log('Second animal is', secondAnimal);  
 
 
 
@@ -71,12 +71,9 @@ console.groupCollapsed('Second animal is', secondAnimal);  //unsure if we're sup
 
 
 
-let lastAnimal = animalArray[array.length - 1]; 
+let lastAnimal = animalArray[animalArray.length - 1]; 
 console.log('Last animal is', lastAnimal);
 console.log('Animals are: ', animalArray);
-
-animalArray.push('horse');
-
 
 
 
@@ -105,20 +102,28 @@ console.log('Added an animal to end,', animalArray);
 //      array. (How can you be 100% certain this worked? 🤔)
 
 
+//      array. (How can you be 100% certain this worked? 🤔)
+
+
+let dessert = 'pie';
 
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
 animalArray.unshift(animalToUnshift);
-console.log(`Added an animal to beginning: ${animalArray}`);
+
+// Example: Add to the beginning of an array using the Array.unshift method.
 
 
 // 4.b. TODO: Create a variable `entree` and assign it a string value of
 //      an entree that you enjoy.
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
 
+//      an entree that you enjoy.
+//      Add the `entree` to the beginning of your `favoriteFoods` array.
 
-
+let entree = 'cheeseburger';
+favoriteFoods.unshift(entree);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
